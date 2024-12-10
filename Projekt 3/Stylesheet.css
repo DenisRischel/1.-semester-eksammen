@@ -74,9 +74,6 @@ body {
 
 @media (max-width: 768px) {
 
-    .content {
-    }
-
     .nav-links {
         display: none;
         flex-direction: row;
