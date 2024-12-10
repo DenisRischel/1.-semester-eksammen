@@ -176,16 +176,23 @@ body {
 /* knap slut */
 
 /* billeder */
-.main.container{
-    width: 20%;
-}
+
 
 .main-container .image img{
-width: 20%;
-display: inline-block;
-border-bottom: 4px solid #F6D8AE;
-padding-bottom: 10px;
+width: 50%;
 }
+
+.main-container .image::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-103%) translateY(-7400%);
+    width: 20%; /* Bredden af linjen */
+    height: 4px;
+    background-color: #F6D8AE;
+  }
+
 
 .image {
     margin-top: -150px;
