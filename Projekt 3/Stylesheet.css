@@ -155,6 +155,14 @@ body {
     color: #F6D8AE;
 }
 
+.p1content a {
+    color: #F6D8AE;
+}
+
+.p1content a:hover{
+    color: #c7811f;
+}
+
 .hkcontent {
     
     display: flex;
