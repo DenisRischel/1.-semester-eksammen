@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denis Rischel</title>
+    <link rel="stylesheet" href="Stylesheet.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="forside.html">Denis Rischel</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="forside.html">Hjem</a></li>
+            <li><a href="Om_mig.html">Om Mig</a></li>
+            <li><a href="Projekter.html" class="active">Projekter</a></li>
+            <li><a href="Kontakt_mig.html">Kontakt mig</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        });
+    </script>
+<div class="image-container2">
+        <div class="image-box">
+            <a href="hello_kitty.html"><img src="hellokitty.png"Sample Image>
+            <div class="overlay-text">Hello Kitty Heavy Metal sko</div></a>
+        </div>
+
+        <div class="image-box2">
+            <a href="Projekt_1.html"><img src="næsby2.jpg"Sample Image>
+                <div class="overlay-text">Redesign af en hjemmeside</div></a>
+        </div>
+
+        <div class="image-box3">
+            <a href="Dating_app.html"><img src="denis2.jpg"Sample Image>
+                <div class="overlay-text">Dating app</div></a>
+        </div>
+
+        <div class="image-box4">
+            <a href="Projekt_2.html"><img src="hcafestivals.jpg"Sample Image>
+                <div class="overlay-text">H.C.A Festivals</div></a>
+        </div>
+
+        <div class="image-box5">
+            <a href="Moving_art.html"><img src="denis2.jpg"Sample Image>
+                <div class="overlay-text">Moving Art</div></a>
+        </div>
+
+        <div class="image-box6">
+            <a href="Animation.html"><img src="denis2.jpg"Sample Image>
+                <div class="overlay-text">Animation</div></a>
+        </div>
+</div>
+</body>
+</html>

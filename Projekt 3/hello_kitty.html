@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denis Rischel</title>
+    <link rel="stylesheet" href="Stylesheet.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="forside.html">Denis Rischel</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="forside.html">Hjem</a></li>
+            <li><a href="Om_mig.html">Om Mig</a></li>
+            <li><a href="Projekter.html" class="active">Projekter</a></li>
+            <li><a href="Kontakt_mig.html">Kontakt mig</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        });
+    </script>
+    
+</body>
+</html>

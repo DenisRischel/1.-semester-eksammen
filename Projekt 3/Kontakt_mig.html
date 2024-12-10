@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denis Rischel</title>
+    <link rel="stylesheet" href="Stylesheet.css">
+    <link rel="mail" href="emai.php">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="forside.html">Denis Rischel</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="forside.html">Hjem</a></li>
+            <li><a href="Om_mig.html">Om Mig</a></li>
+            <li><a href="Projekter.html">Projekter</a></li>
+            <li><a href="Kontakt_mig.html" class="active">Kontakt mig</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        });
+    </script>
+
+<main>
+    <h3>Kontakt mig</h3>
+    <div class="form-container">
+        <form action="emai.php" method="POST">
+            <div class="form-group">
+                <label for="fname">Navn/Firma</label>
+                <input type="text" id="fname" name="firstname" placeholder="Skriv dit navn eller firma.." required>
+            </div>
+        
+            <div class="form-group">
+                <label for="lname">Email</label>
+                <input type="text" id="lname" name="lastname" placeholder="Skriv din email.." required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Emne</label>
+                <textarea id="subject" name="subject" placeholder="Skriv noget.." rows="6" required></textarea>
+            </div>
+        
+            <div class="form-group">
+                <input type="submit" value="Send">
+            </div>
+        </form>
+    </div>
+    
+</main>
+    
+</body>
+</html>
