@@ -10,6 +10,8 @@
 body {
 
     background-color: #2E4057;
+    color: #F6D8AE;
+    overflow-x: hidden;
 }
 .navbar {
     display: flex;
@@ -72,16 +74,7 @@ body {
 
 @media (max-width: 768px) {
 
-    .button button {
-        margin-left: auto;
-        margin-right: auto;
-        width: 80%; /* Make buttons adapt to the screen width */
-    }
-
-    .om_mig_content {
-        margin-left: auto;
-        margin-right: auto;
-        width: 90%;
+    .content {
     }
 
     .nav-links {
@@ -110,18 +103,67 @@ body {
 
 
 }
+
+@media (max-width: 768px) {
+    .content {
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .image img {
+        width: 100%;
+    }
+
+    .button button {
+        width: auto;
+        font-size: 1rem;
+    }
+
+    .skills-icons {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 1.5rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+
+    .skills-icons img {
+        width: 40px;
+    }
+
+    .button button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}
 /* Menu slut */
 
 /* tekst */
-
 .content {
-    color: #F6D8AE;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 200px;
-    margin-left: 750px;
+    text-align: center;
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 90%; /* Adjust width for responsiveness */
+    color: #F6D8AE;
 }
+
+.content h1 {
+    font-size: 2rem;
+}
+
+.content p {
+    font-size: 1.2rem;
+}
+
 
 .om_mig_content {
     display: flex;
@@ -136,68 +178,54 @@ body {
     margin: auto;
 
 }
-/* tekst */
+/* tekst slut */
 
 
 /* knap */
+.button-container {
+    text-align: center;
+    margin: 30px auto;
+}
+
 .button button {
-    width: 20%;
-    height: 7vh;
-    background-color: #4e81b8;  /* Button background color */
-    color: #F6D8AE;  /* Text color */
-    font-size: 23px;  /* Font size */
-    padding: 10px 20px;  /* Padding inside the button */
-    border: none;  /* Remove the default border */
-    border-radius: 5px;  /* Rounded corners */
-    cursor: pointer;  /* Cursor changes to a pointer when hovering */
-    transition: background-color 0.3s ease, transform 0.3s ease;  /* Smooth transition for color and transform */
-    text-align: center;  /* Center text */
-    margin-top: 20px;
-    margin-left: 1135px;
+    background-color: #4e81b8;
+    color: #F6D8AE;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
 }
-
-
-.button button a {
-    color: inherit; 
-    text-decoration: none;
-    font-weight: bold;
-}
-
 
 .button button:hover {
     background-color: #31557a;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
-/* Active effect (when clicked) */
-.button button:active {
-    transform: scale(0.98);  /* Slightly shrink when clicked */
+.button button a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
 }
+
 /* knap slut */
 
 /* billeder */
 
-
-.main-container .image img{
-width: 50%;
-}
-
-.main-container .image::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-103%) translateY(-7400%);
-    width: 20%; /* Bredden af linjen */
-    height: 4px;
-    background-color: #F6D8AE;
-  }
-
-
 .image {
-    margin-top: -150px;
-    margin-left: 350px;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
 }
+
+.image img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 0px;
+}
+
+
 
 .image-container2 {
     display: grid; 
@@ -277,9 +305,9 @@ width: 50%;
 .skills-icons {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin-top: -170px;
-    margin-left: 750px;
+    gap: 15px;
+    margin: 20px auto;
+    flex-wrap: wrap; /* Wraps icons on smaller screens */
 }
 
 .skills-icons img {
@@ -292,6 +320,8 @@ width: 50%;
     transform: scale(1.2);
     filter: brightness(1.3);
 }
+
+
 
 .skills-icons2 {
     display: flex;
