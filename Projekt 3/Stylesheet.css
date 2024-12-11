@@ -143,6 +143,51 @@ body {
 
 /* tekst */
 
+
+.mcontent {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 40%; /* Adjust width for responsiveness */
+    color: #F6D8AE;
+}
+
+.p2content a {
+    color: #F6D8AE;
+}
+
+.p2content a:hover{
+    color: #c7811f;
+}
+
+.p2content {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 40%; /* Adjust width for responsiveness */
+    color: #F6D8AE;
+}
+
+.dcontent {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 40%; /* Adjust width for responsiveness */
+    color: #F6D8AE;
+}
+
 .p1content {
     
     display: flex;
@@ -242,6 +287,11 @@ body {
 /* knap slut */
 
 /* billeder */
+
+.video {
+    display: flex;
+    justify-content: center;
+}
 
 .image {
     display: flex;
