@@ -143,6 +143,18 @@ body {
 
 /* tekst */
 
+.acontent {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 40%; /* Adjust width for responsiveness */
+    color: #F6D8AE;
+}
+
 
 .mcontent {
     
@@ -309,9 +321,9 @@ body {
 
 .image-container2 {
     display: grid; 
-    grid-template-columns: repeat(3, 1fr); /* Create 3 equal-width columns */
-    grid-gap: 20px; /* Space between the boxes */
-    justify-items: center; /* Center images horizontally */
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px; 
+    justify-items: center; 
     margin-top: 20px;
 }
 
@@ -346,12 +358,13 @@ body {
     object-fit: cover;
 }
 
-.image-box:hover, 
-.image-box2:hover, 
-.image-box3:hover, 
-.image-box4:hover, 
-.image-box5:hover, 
-.image-box6:hover {
+
+.image-box:hover img, 
+.image-box2:hover img, 
+.image-box3:hover img, 
+.image-box4:hover img, 
+.image-box5:hover img, 
+.image-box6:hover img {
     transform: scale(1.1);
     filter: brightness(0.5);
     transition: transform 0.3s ease, filter 0.3s ease;
@@ -370,14 +383,13 @@ body {
     transition: opacity 0.3s ease; 
 }
 
-
 .image-box:hover .overlay-text, 
 .image-box2:hover .overlay-text, 
 .image-box3:hover .overlay-text, 
 .image-box4:hover .overlay-text, 
 .image-box5:hover .overlay-text, 
 .image-box6:hover .overlay-text {
-    opacity: 1; 
+    opacity: 1;
 }
 /* billeder slut */
 
@@ -387,7 +399,7 @@ body {
     justify-content: center;
     gap: 15px;
     margin: 20px auto;
-    flex-wrap: wrap; /* Wraps icons on smaller screens */
+    flex-wrap: wrap;
 }
 
 .skills-icons img {
@@ -486,3 +498,21 @@ h3 {
     font-size: 24px;
 }
 /* kontakt box slut*/
+
+.sprite {
+    width : 400px;
+    height: 400px;
+    background: url('billeder/monster.webp') 0 0 no-repeat;
+    animation: play 1300ms steps(20) infinite;
+}
+
+@keyframes play {
+    0% { background-position: 0px }
+    100% { background-position: -8000px }
+
+}
+
+.sprite {
+    position: relative;
+    left: 38%;
+}
