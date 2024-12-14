@@ -353,7 +353,7 @@ body {
 .image-box5:hover, 
 .image-box6:hover {
     transform: scale(1.1);
-    filter: brightness(0.8);
+    filter: brightness(0.5);
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
