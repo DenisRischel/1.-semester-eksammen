@@ -524,7 +524,11 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 1300ms ease-in
+    transition: 1300ms ease-in;
+}
+
+.fab {
+    color: #F6D8AE;
 }
 
 .linkcontainer :hover{
